@@ -1,3 +1,26 @@
+# Emereg Quickstart
+
+This is a [Emereg](https://emereg.com) quickstart project.
+
+## Getting Started
+1. Create an account and project on [Emereg](https://emereg.com).
+2. Get your API token: [Instructions](https://emeregpteltd.mintlify.app/quickstart).
+3. Create a `.env.local` file in the root of the project and add the following:
+    ```bash
+    EMEREG_API_TOKEN=
+    ```
+4. Update `project_id` in `app/api/v/1/sessions`.
+5. Hit the API:
+    ```
+    curl --location 'localhost:3000/api/v1/sessions' \
+    --header 'Content-Type: application/json' \
+    --data '{}'
+    ```
+
+Note: review `next.config.mjs` for project settings.
+
+# NextJS
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
