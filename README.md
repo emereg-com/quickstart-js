@@ -3,15 +3,19 @@
 This is a [Emereg](https://emereg.com) quickstart project.
 
 ## Getting Started
-1. Create an account and project on [Emereg](https://emereg.com).
+1. Create an Account and Project on [Emereg](https://emereg.com).
 2. Get your API token: [Instructions](https://emeregpteltd.mintlify.app/quickstart).
 3. Create a `.env.local` file in the root of the project and add the following:
-    ```bash
-    EMEREG_API_TOKEN=
+    ```js
+    EMEREG_API_TOKEN={api_token_from_platform}
     ```
 4. Update `project_id` in `app/api/v/1/sessions`.
-5. Hit the API:
+5. Start server with:
+    ```sh
+    npm i && npm run dev
     ```
+6. Make a request on the updated API:
+    ```sh
     curl --location 'localhost:3000/api/v1/sessions' \
     --header 'Content-Type: application/json' \
     --data '{}'
