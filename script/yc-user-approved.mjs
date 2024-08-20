@@ -70,7 +70,7 @@ const options = {
   },
   body: JSON.stringify({
     project_id: process.env.PROJECT_ID,
-    timeout: 60
+    timeout: 120
   })
 };
 
