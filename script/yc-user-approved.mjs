@@ -132,6 +132,8 @@ async function runScript(page) {
   console.log(companyLinks);
   console.log(companyLinks.length);
 
+
+
 };
 
 runScript(page);
